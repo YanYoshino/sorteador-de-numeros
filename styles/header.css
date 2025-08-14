@@ -1,0 +1,48 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.75rem;
+    overflow: hidden;
+}
+header p {
+    font: var(--overline);
+}
+@media (min-width: 85.375rem) {
+    .logo {
+        padding-top: 4.75rem;
+        justify-content: initial;
+    }
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: hidden;
+    
+    & p{
+        font: var(--overline);
+        background-image: var(--gradient-content);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        text-transform: uppercase;
+    }
+    & h1{
+        font: var(--dp-md);
+        color: var(--content-secondary);
+        text-transform: uppercase;
+    }
+    color: aliceblue;
+}
+@media (min-width: 85.375rem) {
+    header{
+        gap: .75rem;
+    }
+    header h1{
+        font: var(--dp-lg);
+    }
+  }
+  
